@@ -78,7 +78,6 @@ class _HomeScreensState extends State<HomeScreens> {
                                   Text(snapshot.data![index].title.length > 20
                                       ? "${snapshot.data![index].title.substring(0, 20)}..."
                                       : snapshot.data![index].title),
-                                  Text(index.toString()),
                                   const Spacer(),
                                   Text(SecToMin(int.parse(snapshot
                                       .data![index].duration

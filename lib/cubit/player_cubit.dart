@@ -13,6 +13,7 @@ class PlayerCubit extends Cubit<PlayerStates> {
     emit(LoadSongLoading());
     int duration = 0;
     try {
+      isPlaying = true;
       player.setAudioSource(AudioSource.uri(Uri.parse(songModel[index].uri!)));
       player.play();
       player.durationStream.listen((state2) {

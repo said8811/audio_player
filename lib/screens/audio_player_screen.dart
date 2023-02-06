@@ -81,15 +81,19 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
                       style: const TextStyle(fontSize: 16, color: Colors.grey),
                     ),
                     const SizedBox(height: 20),
-                    Slider(
-                      value: state.currentPosition.toDouble(),
-                      max: state.seconds.toDouble(),
-                      label: state.currentPosition.toString(),
-                      onChanged: (double value) {
-                        BlocProvider.of<PlayerCubit>(context)
-                            .change(state.index, state.songs, value.toInt());
-                        setState(() {});
-                      },
+                    SliderTheme(
+                      data: const SliderThemeData(
+                          thumbShape:
+                              RoundSliderThumbShape(enabledThumbRadius: 6)),
+                      child: Slider(
+                        value: state.currentPosition.toDouble(),
+                        max: state.seconds.toDouble(),
+                        onChanged: (double value) {
+                          BlocProvider.of<PlayerCubit>(context)
+                              .change(state.index, state.songs, value.toInt());
+                          setState(() {});
+                        },
+                      ),
                     ),
                     Padding(
                       padding: const EdgeInsets.symmetric(horizontal: 24),
