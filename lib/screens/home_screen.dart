@@ -1,12 +1,10 @@
 import 'package:audio_player/cubit/player_cubit.dart';
 import 'package:audio_player/cubit/player_states.dart';
 import 'package:audio_player/screens/audio_player_screen.dart';
-import 'package:audio_player/screens/cashapp.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 import 'package:permission_handler/permission_handler.dart';
-import 'package:just_audio/just_audio.dart';
 import 'package:audio_player/widgets/second_to_min.dart';
 
 class HomeScreens extends StatefulWidget {
