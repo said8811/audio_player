@@ -38,7 +38,6 @@ dependencies:
   flutter_bloc: ^8.1.1
   on_audio_query: ^2.6.1
   permission_handler: ^10.2.0
-  intl: ^0.18.0
   just_audio: ^0.9.31
   just_audio_background: ^0.0.1-beta.9
 

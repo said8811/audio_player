@@ -15,6 +15,7 @@ class HomeScreens extends StatefulWidget {
 }
 
 class _HomeScreensState extends State<HomeScreens> {
+  // ignore: non_constant_identifier_names
   final _audio_query = OnAudioQuery();
 
   request() {
@@ -34,7 +35,7 @@ class _HomeScreensState extends State<HomeScreens> {
         title: const Text("PLaY"),
       ),
       body: Container(
-          padding: const EdgeInsets.symmetric(vertical: 12),
+          padding: const EdgeInsets.only(top: 12),
           child: Column(
             children: [
               Expanded(
@@ -149,7 +150,6 @@ class _HomeScreensState extends State<HomeScreens> {
                                     onPressed: () async {
                                       BlocProvider.of<PlayerCubit>(context)
                                           .stopAndplay();
-                                      setState(() {});
                                     },
                                     icon: PlayerCubit.isPlaying
                                         ? const Icon(Icons.pause)
