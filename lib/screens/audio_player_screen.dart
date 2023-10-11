@@ -1,11 +1,11 @@
 import 'package:audio_player/cubit/player_cubit.dart';
 import 'package:audio_player/cubit/player_states.dart';
-import 'package:audio_player/widgets/second_to_min.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:flutter/material.dart';
 import 'package:on_audio_query/on_audio_query.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
+// ignore: must_be_immutable
 class AudioPlayerScreen extends StatefulWidget {
   final List<SongModel> audioModel;
   late int index;
@@ -163,7 +163,7 @@ class _AudioPlayerScreenState extends State<AudioPlayerScreen> {
                   ],
                 );
               }
-              return SizedBox();
+              return const SizedBox();
             },
             listener: (context, state) {},
           )),

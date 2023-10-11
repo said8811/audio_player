@@ -1,42 +1,42 @@
 class AudioModel {
   String title;
-  String audio_path;
-  String image_url;
+  String audioPath;
+  String imageUrl;
   AudioModel(
-      {required this.audio_path, required this.image_url, required this.title});
+      {required this.audioPath, required this.imageUrl, required this.title});
 
   static List<AudioModel> audios = [
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg"),
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg"),
     AudioModel(
         title: "Close Eyes,DVRST",
-        audio_path: "mp3/closeEyes.mp3",
-        image_url: "assets/images/closeEyes.jpg")
+        audioPath: "mp3/closeEyes.mp3",
+        imageUrl: "assets/images/closeEyes.jpg")
   ];
 }
